@@ -64,4 +64,4 @@ function* breakTree(dimension, block) {
         }
         yield;
     }
-}
+} 
