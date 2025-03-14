@@ -23,7 +23,8 @@ const woodBlocks = new Set([
 
 world.beforeEvents.playerBreakBlock.subscribe(e => {
     const { block, player } = e;
-    const hand = player.getComponent('minecraft:equippable').getEquipmentSlot('Mainhand');
+    const hand = player.getComponent('minecraft:equippable').getEquipment("Mainhand");
+    if (!hand) return;
     const lore = hand.getLore();
     const veinminer = lore?.includes('Treecapitator') && woodBlocks.has(block.typeId);
 
