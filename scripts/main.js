@@ -10,15 +10,7 @@ const woodBlocks = new Set([
     'minecraft:mangrove_log',
     'minecraft:cherry_log',
     'minecraft:crimson_stem',
-    'minecraft:warped_stem',
-    'minecraft:oak_leaves',
-    'minecraft:spruce_leaves',
-    'minecraft:birch_leaves',
-    'minecraft:jungle_leaves',
-    'minecraft:acacia_leaves',
-    'minecraft:dark_oak_leaves',
-    'minecraft:mangrove_leaves',
-    'minecraft:cherry_leaves'
+    'minecraft:warped_stem'
 ]);
 
 world.beforeEvents.playerBreakBlock.subscribe(e => {
